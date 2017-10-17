@@ -2,7 +2,7 @@ gitlab-dev:
   container_name: gitlab-dev
   image: alejdg/gitlab:debian
   volumes:
-   - ./:~/omnibus-gitlab/files/gitlab-cookbooks/gitlab
+   - ./:/home/root/omnibus-gitlab/files/gitlab-cookbooks/gitlab
   tty: true
   stdin_open: true
   command: bash
